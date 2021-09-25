@@ -18,7 +18,7 @@ body {
     background-color: rgb(37, 31, 31) ;
     color: white;
     display: flex;
-    position: fixed;
+    position: relative;
     width: 100%;
     
   }
