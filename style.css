@@ -1,127 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-   /* box-sizing: border-box; */
-
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 body {
-    font-family: system-ui;
+  font-family: system-ui;
+}
+.nav-bar {
+  background-color: rgb(37, 31, 31);
+  color: white;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.logo img {
+  height: 3rem;
+  padding: 3px;
+  margin: 0px 30px;
+  cursor: pointer;
+}
+.nav {
+  list-style: none;
+  padding: 9px;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  color: rgb(90, 218, 179);
+  cursor: pointer;
+}
 
-  }
-  .nav-bar{
-    background-color: rgb(37, 31, 31) ;
-    color: white;
-    display: flex;
-    position: relative;
-    width: 100%;
-    
-  }
-  .logo img{
-    height: 3rem;
-    padding: 3px;
-    margin: 0px 30px;
-    cursor: pointer;
-  }
-  .nav{
-    list-style: none;
-    padding: 9px;
-    font-size: 1.5rem;
-    font-family: 'Inter', sans-serif;
-    color: rgb(90, 218, 179);
-    cursor: pointer;
-    
-  }
-  
-  .code-editior{
-    display:flex;
-    justify-content: center;
-    background-color: #353332;
-   
-   
-  }
-  .code{
-    cursor: pointer;
-    padding: 25px;
-    color:rgb(138, 207, 187); 
-  }
-  .code h2:hover{
-  
-    color:rgb(143, 206, 101);
-  }
-  
- textarea{
-     
-     height: 240px;
-     width: 360px;
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #f1f1f1;
-  
-  }
-  .result{
-    background-color:#353332;
-    color:rgb(138, 207, 187); 
-    
-  }
-  .result iframe{
-    width:97%;
-    height: 20rem;
-   margin: 0px 20px;
-    padding: 4px;
-    margin-bottom: 20px;
-    background-color: white;
-  }
-  .result h2{
-    display: inline-block;
-    cursor: pointer;
-    padding-left: 20px;
-  }
-  .result h2:hover{
-    color:rgb(143, 206, 101);
-  }
-  .footer{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.code-editior {
+  display: flex;
+  justify-content: center;
+  background-color: #353332;
+}
+.code {
+  cursor: pointer;
+  padding: 25px;
+  color: rgb(138, 207, 187);
+}
+.code h2:hover {
+  color: rgb(143, 206, 101);
+}
+
+textarea {
+  margin-top: 0.5rem;
+  height: 240px;
+  padding: 1rem;
+  width: 360px;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #f1f1f1;
+}
+.result {
+  background-color: #353332;
+  color: rgb(138, 207, 187);
+}
+.result iframe {
+  width: 97%;
+  height: 20rem;
+  margin: 0px 20px;
+  padding: 4px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.result h2 {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.result h2:hover {
+  color: rgb(143, 206, 101);
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   height: 30px;
-  
-    background-color: rgb(43, 38, 38);
-    color:rgb(123, 218, 59);
-    font-size: 20px;
-  font-weight:lighter;
-  font-family: 'Cabin', sans-serif;
-  }
-  .middle{
-    display: block;
-    background-color: #353332;
 
+  background-color: rgb(43, 38, 38);
+  color: rgb(123, 218, 59);
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Cabin", sans-serif;
+}
+.middle {
+  display: block;
+  background-color: #353332;
+}
+@media (max-width: 800px) {
+  .code-editior {
+    flex-direction: column;
+    justify-content: center;
+    background-position: 100%;
   }
- @media(max-width:800px){
-   .code-editior{
-     flex-direction: column;
-     justify-content: center;
-     background-position: 100%;
-  
-     
-   }
-   textarea{
+  textarea {
+    height: 240px;
+    width: 280px;
+  }
+  .result iframe {
+    width: auto;
+  }
 
-     height: 240px;
-     width: 280px;
-   }
-   .result iframe{
-     width: auto;
-   }
-  
-   .footer{
-     height: 65px;
-   }
- }
-  
-  
+  .footer {
+    height: 65px;
+  }
+}
