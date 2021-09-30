@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-   /* box-sizing: border-box; */
+    box-sizing: border-box; 
 
 }
 html, body {
@@ -11,8 +11,10 @@ html, body {
   overflow-x: hidden;
 }
 body {
-    font-family: system-ui;
-
+     font-family: cursive;
+margin: 15px 30px;
+  font-size: 20px;
+  padding: 15px;
   }
   .nav-bar{
     background-color: rgb(37, 31, 31) ;
@@ -123,5 +125,15 @@ body {
      height: 65px;
    }
  }
-  
+ h1{
+      font-size:25px;
+      color: rgb(138, 207, 187); 
+      background-color: #353332;
+     cursor: pointer;
+    padding: 25px;
+    color:rgb(138, 207, 187);
+   }
+   h1:hover{
+    color:rgb(143, 206, 101);
+  } 
   
