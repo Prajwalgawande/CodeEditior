@@ -52,6 +52,15 @@ body {
   padding: 25px;
   color: rgb(248, 245, 69);
 }
+ #Html{
+  color: rgb(246, 127, 15);
+}
+ #Css{
+  color: rgb(7, 206, 246);
+}
+ #Js{
+  color: rgb(254, 237, 6);
+}
 
 textarea {
   resize: none;
